@@ -1,0 +1,388 @@
+.main_div .row {
+  height: 100%;
+}
+
+.post_input {
+  padding-right: 10px;
+}
+.post_input .edit_sticky {
+  position: sticky;
+  top: 0;
+  margin-bottom: 30px;
+}
+.post_input .edit_sticky .page_name {
+  padding-bottom: 45px;
+}
+.post_input .edit_sticky .page_name h3 span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--backbgwhite);
+  padding: 2px 10px;
+  border-radius: 50px;
+}
+.post_input .edit_sticky .page_name h3 span.green {
+  background: var(--green);
+}
+.post_input .edit_sticky .page_name h3 span.yellow {
+  background: var(--tab_hover);
+}
+.post_input .edit_sticky .page_name h3 span.red {
+  background: var(--redbackground);
+}
+.post_input .edit_sticky .page_name h3 span.gray {
+  background: var(--graybackground);
+}
+.post_input .div_sticky {
+  position: sticky;
+  top: 0;
+}
+.post_input .div_sticky .page_name {
+  padding-bottom: 45px;
+}
+.post_input .div_sticky .page_name h3 span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--backbgwhite);
+  margin-left: 10px;
+  padding: 1px 10px;
+  border-radius: 50px;
+}
+.post_input .div_sticky .page_name h3 span.green {
+  background: var(--green);
+}
+.post_input .div_sticky .page_name h3 span.yellow {
+  background: var(--tab_hover);
+}
+.post_input .div_sticky .page_name h3 span.red {
+  background: var(--redbackground);
+}
+.post_input .div_sticky .page_name h3 span.gray {
+  background: var(--graybackground);
+}
+.post_input .div_sticky .input_box .input_sub_box {
+  border-bottom: 1px solid var(--border1);
+  margin-bottom: 20px;
+  display: flex !important;
+}
+.post_input .div_sticky .input_box .input_sub_box label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  width: 180px;
+  white-space: nowrap;
+}
+.post_input .div_sticky .input_box .input_sub_box .project_span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-left: 20px;
+  color: var(--mainfontcolur);
+  width: calc(100% - 180px);
+}
+.post_input .div_sticky .input_box .input_sub_box .project_span .project_scroll {
+  max-height: 240px;
+  overflow-y: auto;
+  scrollbar-color: #888888 #f1f1f1;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+}
+.post_input .div_sticky .input_box .input_sub_box .project_span .project_scroll::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background: var(--blue);
+}
+.post_input .div_sticky .input_box .input_sub_box .project_span .project_scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.post_input .div_sticky .input_box .input_sub_box .project_span .project_scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.post_input .div_sticky .input_box .input_sub_box .project_span .project_scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+.post_input .div_sticky .input_box .input_sub_box .project_span .project_scroll::-webkit-scrollbar-thumb:horizontal {
+  background: #888;
+  border-radius: 10px;
+}
+.post_input .div_sticky .input_box .input_sub_box .project_span span {
+  color: var(--mainfontcolur) !important;
+}
+.post_input .div_sticky .input_box .input_sub_box .project_span h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.post_input .div_sticky .input_box .input_sub_box .pdf_vieweer {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+.post_input .div_sticky .input_box .employe_profiles {
+  padding-top: 30px;
+}
+.post_input .div_sticky .input_box .employe_profiles .image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 2px solid var(--border1);
+}
+.post_input .div_sticky .input_box .employe_profiles .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50px;
+  display: block;
+}
+.post_input .div_sticky .input_box .employe_profiles .text {
+  width: calc(100% - 100px);
+  padding-left: 15px;
+}
+.post_input .div_sticky .input_box .employe_profiles .text h3 {
+  font-size: 1.6rem;
+  padding-bottom: 2px;
+}
+.post_input .div_sticky .input_box .employe_profiles .text p {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+.post_input .div_sticky .input_box .employe_profiles .text h4 {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--green);
+}
+.post_input .input_sub_box {
+  display: block !important;
+}
+.post_input .input_sub_box label {
+  display: block;
+  padding-bottom: 8px;
+}
+.post_input .input_sub_box input {
+  width: 100% !important;
+}
+.post_input .post_editor {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.post_input .post_editor textarea {
+  width: 100% !important;
+}
+.post_input .post_editor .multiselect-wrapper {
+  overflow: hidden;
+  height: 40px;
+}
+.post_input .post_editor .multiselect-single-label-text,
+.post_input .post_editor .multiselect-option {
+  font-size: 1.4rem;
+  color: var(--mainfontcolur);
+}
+.post_input .post_editor .ql-formats button {
+  background: unset !important;
+  background-color: unset !important;
+  margin-top: 0 !important;
+  font-size: 1.4rem !important;
+  font-weight: unset !important;
+  padding: 3px 5px !important;
+}
+.post_input .post_editor .ql-editor {
+  height: 120px;
+  overflow-y: auto;
+}
+.post_input .post_editor .ql-editor::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background: var(--blue);
+}
+.post_input .post_editor .ql-editor::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.post_input .post_editor .ql-editor::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.post_input .post_editor .ql-editor::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+.post_input .post_editor .ql-editor::-webkit-scrollbar-thumb:horizontal {
+  background: #888;
+  border-radius: 10px;
+}
+.post_input.view_project .border_document {
+  border-bottom: none !important;
+  flex-direction: column;
+  margin-bottom: 0 !important;
+}
+.post_input.view_project .border_bottom_div {
+  border-bottom: 1px solid var(--border1) !important;
+  margin-bottom: 15px !important;
+}
+
+.input_profilebox {
+  border: none;
+}
+.input_profilebox .employe_flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.input_profilebox .employe_flex .employe_profiles {
+  padding-top: 0 !important;
+  padding: 10px;
+  width: 50%;
+}
+.input_profilebox .employe_flex .employe_profiles .employ_boxdiv {
+  border: 1px solid var(--border1);
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.input_profilebox .profile-model-container {
+  position: fixed;
+  top: 96px;
+  right: -500px;
+  height: calc(100% - 96px);
+  transition: all ease-in-out 0.55s;
+  z-index: 1;
+}
+.input_profilebox .profile-model-container .profile-content {
+  width: 500px;
+  height: 100%;
+  background: var(--backbgwhite);
+  margin-left: auto;
+  border-left: 1px solid var(--border1);
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+}
+.input_profilebox .profile-model-container .profile-content .modal_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: var(--leftbackground);
+}
+.input_profilebox .profile-model-container .profile-content .modal_name h3 {
+  font-size: 1.5rem;
+}
+.input_profilebox .profile-model-container .profile-content .modal_name button {
+  background: none;
+  border: none;
+  color: var(--mainfontcolur);
+}
+.input_profilebox .profile-model-container .profile-content .image_box {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+}
+.input_profilebox .profile-model-container .profile-content .image_box .img-crcle {
+  width: 120px;
+  height: 120px;
+  border: 1px solid var(--border1);
+  border-radius: 100px;
+}
+.input_profilebox .profile-model-container .profile-content .image_box .img-crcle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 100px;
+}
+.input_profilebox .profile-model-container .profile-content .image_box .prfl-des {
+  padding-left: 15px;
+}
+.input_profilebox .profile-model-container .profile-content .image_box .prfl-des h3 {
+  padding-top: 15px;
+  padding-bottom: 6px;
+}
+.input_profilebox .profile-model-container .profile-content .skills-sec {
+  padding: 15px;
+}
+.input_profilebox .profile-model-container .profile-content .skills-sec h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--mainfontcolur);
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+.input_profilebox .profile-model-container .profile-content .skills-sec p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--mainfontcolur);
+}
+.input_profilebox .profile-model-container .profile-content .skills-sec ul {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.input_profilebox .profile-model-container .profile-content .skills-sec ul li {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--mainfontcolur);
+}
+.input_profilebox .profile-model-container .profile-content .skills-sec:not(:last-child) {
+  border-bottom: 1px dashed var(--border1);
+}
+.input_profilebox .profile-model-container.open {
+  right: 0;
+}
+
+.input_profilebox_background .input_profilebox_background_close {
+  width: 100%;
+  height: 100%;
+}
+.input_profilebox_background.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+}
+
+.modal_pdf .modal-dialog {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+.modal_pdf .modal-dialog .modal-content {
+  margin: 1% auto;
+  height: 98%;
+}
+.modal_pdf .modal-dialog .modal-content .closes_btn {
+  position: absolute;
+  top: -9px;
+  right: -14px;
+}
+.modal_pdf .modal-dialog .modal-content .closes_btn button {
+  padding: 0px;
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backbgwhite);
+  font-size: 12px;
+}
+.modal_pdf .modal-dialog .modal-content .closes_btn button:focus {
+  box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+}
+.modal_pdf .modal-dialog .modal-content .modal_body {
+  height: 100%;
+}
+.modal_pdf .modal-dialog .modal-content .modal_body > * {
+  height: 100%;
+}/*# sourceMappingURL=clientdashboard.css.map */

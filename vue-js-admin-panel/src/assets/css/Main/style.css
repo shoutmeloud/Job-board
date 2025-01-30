@@ -1,0 +1,801 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+  position: relative;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  color: #696767;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background: #fff;
+  letter-spacing: 0.25px;
+  color: #212121;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --backbgblack: #252729;
+  --backbgwhite: #fff;
+  --leftbackground: #f5f5f5;
+  --leftback: #1a1c1e;
+  --mainfontcolur: #3a3a3a;
+  --paragraph: #737373;
+  --primary_font_colour: #eaeaea;
+  --primary_font_pragraph: #e8e8e8;
+  --input_field_background: #262829;
+  --left_font_colour: #737373;
+  --border-color: rgba(255,255,255, 0.1);
+  --tab_hover: #d69900;
+  --redbackground: #ea4d2c;
+  --blue: #2c65e8;
+  --border: #21232c3d;
+  --border1: #e2e2e2;
+  --round1: #d0d0d0;
+  --lightblue: #dee6fb;
+  --white: #fff;
+  --boxmodeshadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  --green: #2d8647;
+  --tableheading: #f6f6f6;
+  --bodybg: #fff;
+  --modalbg: #fff;
+  --graybackground: #8f8f8f;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 26px;
+  color: var(--mainfontcolur);
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 21px;
+  color: var(--mainfontcolur);
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--paragraph);
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  color: var(--mainfontcolur);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+button svg {
+  fill: var(--mainfontcolur);
+}
+
+a svg {
+  fill: var(--mainfontcolur);
+}
+
+:focus-visible,
+.btn.show,
+.btn:first-child:active {
+  box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
+  outline: none;
+  border-color: var(--white);
+}
+
+/************ left side css start ****************/
+.left_side {
+  padding: 0;
+  background-color: var(--leftbackground);
+  width: 100%;
+  height: 100vh;
+  max-width: 280px;
+  position: relative;
+}
+.left_side .one_box {
+  padding: 24px 20px 23px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid var(--border1);
+}
+.left_side .one_box .name {
+  position: relative;
+}
+.left_side .one_box .name .img a {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+.left_side .one_box .name .img a img {
+  width: auto;
+}
+.left_side .one_box .name .img p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.left_side .scrool_box {
+  margin-top: 96px;
+  height: calc(100vh - 96px);
+  overflow-y: auto;
+  padding-top: 10px;
+}
+.left_side .scrool_box::-webkit-scrollbar {
+  height: 4px;
+  width: 6px;
+  background: gray;
+}
+.left_side .scrool_box::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+.left_side .scrool_box::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+.left_side .scrool_box::-webkit-scrollbar-thumb:hover {
+  background: var(--paragraph);
+}
+.left_side .scrool_box::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+.left_side .scrool_box .two_box {
+  padding: 0px 20px 30px 0px;
+  overflow: hidden;
+}
+.left_side .scrool_box .two_box .accordion {
+  --bs-accordion-color: none;
+  --bs-accordion-bg: none;
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-btn-padding-y: 0;
+  --bs-accordion-btn-icon: url("../../images/plus.svg");
+  --bs-accordion-btn-icon-transform: rotate(0deg);
+  --bs-accordion-btn-active-icon: url("../../images/minus.svg");
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-color: none;
+  --bs-accordion-active-bg: none;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item {
+  border: none;
+  padding-bottom: 12px;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: none;
+  box-shadow: none;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-header {
+  margin-bottom: 6px;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.25px;
+  color: var(--mainfontcolur);
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-color: var(--border1);
+  padding: 10px 10px;
+  border-radius: 3px;
+  background-position: center;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button span {
+  width: 30px;
+  display: inline-block;
+  padding-top: 0px;
+  margin-right: 6px;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button span svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--mainfontcolur);
+  transition: all ease-in-out 0.3s;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button:hover {
+  color: var(--blue);
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button:hover svg {
+  fill: var(--blue);
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button:hover svg path {
+  stroke: var(--blue);
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-body {
+  padding: 0;
+  padding-left: 36px;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-body ul li {
+  margin-bottom: 6px;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-body ul li a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  color: var(--paragraph);
+  padding: 7px 18px;
+  border-radius: 3px;
+  transition: all ease-in-out 0.3s;
+  width: 100%;
+  display: block;
+}
+.left_side .scrool_box .two_box .accordion .accordion-item .accordion-body ul li a:hover {
+  background: var(--border1);
+  color: var(--mainfontcolur);
+}
+.left_side .scrool_box .two_box .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.left_side .scrool_box .two_box .accordion .accordion-button:not(.collapsed)::after {
+  transform: initial;
+}
+.left_side .scrool_box .two_box .setting_div {
+  padding: 0 20px;
+  padding-bottom: 15px;
+}
+.left_side .scrool_box .two_box .setting_div span {
+  width: 30px;
+  display: inline-block;
+  padding-top: 5px;
+  margin-right: 3px;
+}
+.left_side .scrool_box .two_box .setting_div span svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--mainfontcolur);
+  transition: all ease-in-out 0.3s;
+}
+.left_side .scrool_box .two_box .setting_div a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.25px;
+  color: var(--mainfontcolur);
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.left_side .scrool_box .two_box .setting_div a:hover {
+  color: var(--blue);
+}
+.left_side .scrool_box .two_box .setting_div a:hover svg {
+  fill: var(--blue);
+}
+.left_side .scrool_box .two_box .setting_div button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.25px;
+  color: var(--mainfontcolur);
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.left_side .scrool_box .two_box .setting_div button:hover {
+  color: var(--blue);
+}
+.left_side .scrool_box .two_box .setting_div button:hover svg {
+  fill: var(--blue);
+}
+
+/************ header css start ****************/
+.right_side {
+  width: calc(100% - 280px);
+  position: relative;
+  padding: 0;
+}
+.right_side .heading {
+  position: absolute;
+  background-color: var(--backbgwhite);
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0px 26px;
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border1);
+  border-left: 1px solid var(--border1);
+}
+.right_side .heading .left .title p {
+  padding-bottom: 6px;
+}
+.right_side .heading .right {
+  display: flex;
+  align-items: center;
+}
+.right_side .heading .right .image {
+  padding-right: 10px;
+}
+.right_side .heading .right .image ul {
+  display: flex;
+}
+.right_side .heading .right .image ul li {
+  border-radius: 50px;
+  border: 3px solid var(--backbgwhite);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+  margin-left: -15px;
+}
+.right_side .heading .right .image ul li img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.right_side .heading .right .image ul li:last-child {
+  background: var(--round1);
+  color: var(--mainfontcolur);
+}
+.right_side .heading .right .image ul li:hover {
+  z-index: 2;
+}
+.right_side .heading .right .invite {
+  border-right: 1px solid var(--border1);
+  padding-right: 15px;
+  margin-right: 15px;
+}
+.right_side .heading .right .invite button {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: var(--lightblue);
+  color: var(--blue);
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 6px 14px;
+}
+.right_side .heading .right .log_out {
+  border-left: 1px solid var(--border1);
+  padding-left: 15px;
+  margin-left: 15px;
+}
+.right_side .heading .right .log_out button {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 6px 14px;
+  border-radius: 5px;
+}
+.right_side .heading .right .log_out button span {
+  margin-right: 6px;
+}
+.right_side .heading .right .log_out button span svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+  position: relative;
+  top: 3px;
+}
+
+/************ index main div css start ****************/
+.main_div {
+  margin-top: 96px;
+  height: calc(100vh - 96px);
+  overflow-y: auto;
+  padding: 26px;
+  background: var(--bodybg);
+}
+.main_div::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  background: gray;
+}
+.main_div::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+.main_div::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+.main_div::-webkit-scrollbar-thumb:hover {
+  background: var(--paragraph);
+}
+.main_div::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+.main_div .page_name {
+  padding-bottom: 24px;
+}
+
+.dashboard_scroll .main_div {
+  overflow: hidden;
+}
+.dashboard_scroll .main_div .client_new_from {
+  overflow-y: auto;
+  height: calc(100vh - 148px);
+}
+.dashboard_scroll .main_div .client_new_from::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: gray;
+}
+.dashboard_scroll .main_div .client_new_from::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+.dashboard_scroll .main_div .client_new_from::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+.dashboard_scroll .main_div .client_new_from::-webkit-scrollbar-thumb:hover {
+  background: var(--paragraph);
+}
+.dashboard_scroll .main_div .client_new_from::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+.dashboard_scroll .main_div .coments_section .previous_box {
+  overflow-y: auto;
+  height: calc(100vh - 396px);
+}
+.dashboard_scroll .main_div .coments_section .previous_box::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: gray;
+}
+.dashboard_scroll .main_div .coments_section .previous_box::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+.dashboard_scroll .main_div .coments_section .previous_box::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+.dashboard_scroll .main_div .coments_section .previous_box::-webkit-scrollbar-thumb:hover {
+  background: var(--paragraph);
+}
+.dashboard_scroll .main_div .coments_section .previous_box::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+.dashboard_scroll .main_div .page_name h3 span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--white);
+  padding: 1px 16px;
+  border-radius: 50px;
+}
+.dashboard_scroll .main_div .page_name h3 span.green {
+  background: var(--green);
+}
+.dashboard_scroll .main_div .page_name h3 span.yellow {
+  background: var(--tab_hover);
+}
+.dashboard_scroll .main_div .page_name h3 span.red {
+  background: var(--redbackground);
+}
+
+/*********** error toast css *****************/
+.v-toast__item--error,
+.v-toast__item--success {
+  background-color: var(--white) !important;
+  box-shadow: var(--boxmodeshadow) !important;
+}
+
+.v-toast__item.v-toast__item--error .v-toast__icon {
+  background: url(../../images/close.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.v-toast__item.v-toast__item--success .v-toast__icon {
+  background: url(../../images/right.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.v-toast__item .v-toast__icon {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+}
+
+.v-toast__item .v-toast__text {
+  font-size: 1.5rem !important;
+  color: var(--redbackground) !important;
+  font-weight: 600 !important;
+}
+
+.v-toast__item--success .v-toast__text {
+  color: var(--green) !important;
+}
+
+/************ dark mode toggle css start ****************/
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-slot {
+  position: relative;
+  height: 2.2em;
+  width: 6em;
+  border-radius: 100px;
+  background-color: var(--leftbackground);
+  transition: background-color 250ms;
+}
+
+.toggle-button {
+  transform: translate(0.6em, 0.3em);
+  position: absolute;
+  height: 1.6em;
+  width: 2.2em;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
+  z-index: 0;
+}
+
+.sun-icon {
+  position: absolute;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.sun-icon-wrapper {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  opacity: 1;
+  transform: translate(0.9em, 0.3em);
+  transform-origin: 50% 50%;
+  z-index: 1;
+}
+
+.moon-icon {
+  position: absolute;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.moon-icon-wrapper {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  opacity: 1;
+  transform: translate(4em, 0.3em);
+  transform-origin: 50% 50%;
+}
+
+.toggleActive .toggle-button {
+  transform: translate(3.6em, 0.3em);
+}
+
+.toggleActive .sun-icon svg path,
+.toggleActive .sun-icon svg circle {
+  fill: #464646;
+}
+
+.toggleActive .moon-icon svg path {
+  fill: #2c65e8;
+}
+
+.dashboard_box.isActive .toggle-slot {
+  background-color: #303336;
+}
+
+.dashboard_box.isActive .toggleActive .sun-icon svg path,
+.dashboard_box.isActive .toggleActive .sun-icon svg circle {
+  fill: #fff;
+}
+
+.dashboard_box.isActive .toggleActive .moon-icon svg path {
+  fill: #fff;
+}
+
+.dashboard_box.isActive .toggle-button {
+  background-color: #717171;
+}
+
+/************ dark mode toggle css end ****************/
+/************ error text css start ****************/
+.text-danger {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--redbackground) !important;
+}
+
+.symbol_red {
+  color: var(--redbackground);
+}
+
+/************ error text css end ****************/
+.ql-snow .ql-tooltip {
+  left: 0 !important;
+}
+
+.ql-snow .ql-tooltip.ql-editing input[type=text] {
+  width: auto !important;
+  margin-right: 6px;
+  color: #212121;
+}
+
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+  margin-left: 0;
+}
+
+.ql-snow .ql-tooltip.ql-editing a.ql-action {
+  padding: 2px 18px;
+  margin-left: 0;
+}
+
+.post_input .post_editor .ql-editor p a {
+  background: none;
+  color: var(--blue);
+  text-decoration: underline;
+  padding: 0;
+}
+
+.multiselect-option {
+  font-size: 13px !important;
+}
+
+.multiselect-placeholder {
+  padding: 0 10px 0 24px !important;
+  font-size: 13px !important;
+}
+
+.multiselect-tags-search-wrapper {
+  margin: 0;
+}
+
+.multiselect-no-options, .multiselect-no-results {
+  color: var(--redbackground) !important;
+}
+
+.ql-editor a {
+  background: none !important;
+  color: var(--blue) !important;
+  padding: 0px !important;
+  text-decoration: underline !important;
+}
+
+.multiselect-tags-search-wrapper {
+  padding: 8px 0 !important;
+  margin: 0 !important;
+}
+
+.multiselect-clear {
+  padding-left: 5px !important;
+}
+
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow,
+.multiselect,
+.dashboard.isActive .multiselect-dropdown {
+  border: 1px solid var(--border) !important;
+}
+
+.multiselect.is-active {
+  border: 1px solid var(--border) !important;
+  box-shadow: unset !important;
+}
+
+.multiselect-single-label {
+  padding-left: 15px;
+  font-size: 1.4rem;
+  color: var(--mainfontcolur);
+}
+
+.multiselect-dropdown {
+  min-height: 120px !important;
+  max-height: 300px !important;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,87 @@
+.settins_tab .nav {
+  width: 100%;
+  max-width: initial;
+  margin-bottom: 0 !important;
+  border-bottom: 1px solid var(--border);
+}
+.settins_tab .nav .nav-item {
+  transition: all ease-in-out 0.3s;
+}
+.settins_tab .nav .nav-item:not(:last-child) {
+  padding-right: 10px;
+}
+.settins_tab .nav .nav-item .nav-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  background: none;
+  transition: all ease-in-out 0.3s;
+  padding: 9px 15.3px;
+  color: var(--mainfontcolur);
+  overflow: hidden;
+  border: none;
+  border-radius: 0px;
+}
+.settins_tab .nav .nav-item .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  top: 39px;
+  right: 0;
+  background: var(--blue);
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+.settins_tab .nav .nav-item .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+.settins_tab .nav .nav-item .nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+.settins_tab .tab-content {
+  padding-top: 24px;
+  width: 100%;
+}
+.settins_tab .tab-content .input_box .input_sub_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.settins_tab .tab-content .input_box .input_sub_box:not(:last-child) {
+  padding-bottom: 10px;
+}
+.settins_tab .tab-content .input_box .input_sub_box label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--mainfontcolur);
+  padding-bottom: 6px;
+}
+.settins_tab .tab-content .input_box .input_sub_box input {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  width: 560px;
+  height: 40px;
+  background: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.4rem;
+  color: var(--mainfontcolur);
+  position: relative;
+}
+.settins_tab .tab-content .input_box .input_sub_box button {
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: var(--blue);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 8px 18px;
+  border-radius: 5px;
+  display: flex;
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=setting.css.map */

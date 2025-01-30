@@ -1,0 +1,154 @@
+:root {
+  --backbgblack: #252729;
+  --backbgwhite: #fff;
+  --leftbackground: #f5f5f5;
+  --leftback: #1a1c1e;
+  --mainfontcolur: #3a3a3a;
+  --paragraph: #737373;
+  --primary_font_colour: #eaeaea;
+  --primary_font_pragraph: #e8e8e8;
+  --input_field_background: #262829;
+  --left_font_colour: #737373;
+  --border-color: rgba(255,255,255, 0.1);
+  --tab_hover: #d69900;
+  --redbackground: #ea4d2c;
+  --blue: #2c65e8;
+  --border: #21232c3d;
+  --border1: #e2e2e2;
+  --round1: #d0d0d0;
+  --lightblue: #dee6fb;
+  --white: #fff;
+  --boxmodeshadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  --green: #2d8647;
+  --tableheading: #f6f6f6;
+  --bodybg: #fff;
+  --modalbg: #fff;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 26px;
+  color: var(--mainfontcolur);
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 21px;
+  color: var(--mainfontcolur);
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--paragraph);
+}
+
+.isActive {
+  --leftbackground: #1a1c1e;
+  --bodybg: #252729;
+  --backbgwhite: #1a1c1e;
+  --leftback: #1a1c1e;
+  --mainfontcolur: #e8e8e8;
+  --paragraph: #e8e8e8;
+  --input_field_background: #262829;
+  --border-color: ffffff1a;
+  --border: #ffffff1a;
+  --border1: #ffffff1a;
+  --tableheading: #1a1c1e;
+  --svgcolour: #e8e8e8;
+  --bodybg: #252729;
+  --modalbg: #252729;
+}
+.isActive .right_side .heading .right .image ul li:last-child {
+  color: var(--backbgblack);
+}
+.isActive .left_side .scrool_box {
+  border-right: 1px solid var(--border1);
+}
+.isActive .left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button:hover,
+.isActive .left_side .scrool_box .two_box .setting_div a:hover {
+  color: var(--tab_hover);
+}
+.isActive .left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button:hover svg,
+.isActive .left_side .scrool_box .two_box .setting_div a:hover svg {
+  fill: var(--tab_hover);
+}
+.isActive .right_side .heading .right .invite button {
+  background: var(--backbgblack);
+  color: var(--white);
+}
+.isActive .toggle-slot {
+  background: var(--backbgblack);
+}
+.isActive .toggleActive .sun-icon svg circle,
+.isActive .toggleActive .sun-icon svg path {
+  fill: var(--white);
+}
+.isActive .btn-close {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+.isActive .tableone table tbody tr td .td_option {
+  color: #fff;
+}
+.isActive .ql-snow.ql-toolbar button svg, .isActive .ql-snow .ql-toolbar button svg,
+.isActive .ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+  filter: brightness(0) invert(1);
+}
+.isActive .ql-snow .ql-picker.ql-header .ql-picker-label::before {
+  color: #fff;
+}
+.isActive .ql-snow.ql-toolbar .ql-picker-label:hover {
+  background-color: unset !important;
+}
+.isActive .multiselect {
+  background: none;
+}
+.isActive .multiselect-dropdown {
+  border: 1px solid #fff;
+  background: #252729;
+  color: #fff;
+}
+.isActive .coments_section .pre_comment {
+  background: #212121;
+}
+.isActive .ql-snow .ql-editor h1 {
+  color: #fff;
+}
+.isActive .ql-editor li {
+  color: #fff;
+}
+.isActive .input_sub_box .heading_documents .right .all_download svg {
+  filter: brightness(0) invert(1);
+}
+.isActive .left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button span svg path {
+  stroke: var(--white);
+}
+.isActive .left_side .scrool_box .two_box .accordion .accordion-item .accordion-header .accordion-button:hover span svg path {
+  stroke: var(--tab_hover);
+}
+.isActive .left_side .scrool_box .two_box .setting_div button:hover {
+  color: var(--tab_hover);
+}
+.isActive .left_side .scrool_box .two_box .setting_div button:hover svg {
+  fill: var(--tab_hover);
+}
+.isActive .input_sub_box .document_box .documents_subbox .box_position .doc_main_box .documents_border .image_textes {
+  background: var(--leftback);
+}
+.isActive .input_sub_box .document_box .documents_subbox .box_position .doc_main_box .documents_border::after {
+  background: var(--leftback);
+}
+.isActive .input_sub_box .document_box .documents_subbox .box_position:hover .doc_main_box {
+  border: 1px solid var(--leftback);
+}
+.isActive .input_sub_box .document_box .documents_subbox .box_position .text_icon button {
+  background: var(--backbgblack);
+}
+.isActive .client_new_from .input_box .input_sub_box p span {
+  color: var(--mainfontcolur) !important;
+  background-color: var(--backbgblack) !important;
+}/*# sourceMappingURL=dark.css.map */

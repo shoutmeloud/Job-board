@@ -1,0 +1,285 @@
+.register_section {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+.register_section .register_left {
+  width: 50%;
+  height: 100%;
+  background: #6383fa;
+  position: relative;
+}
+.register_section .register_left .top_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.register_section .register_left .bottom_image {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.register_section .register_left .register_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding-left: 100px;
+}
+.register_section .register_left .register_text h2 {
+  font-size: 4.8rem;
+  color: var(--white);
+  font-weight: 600;
+  line-height: 46px;
+  padding-bottom: 10px;
+}
+.register_section .register_left .register_text h2 span {
+  font-size: 4rem;
+}
+.register_section .register_left .register_text p {
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 400;
+}
+.register_section .register_right {
+  width: 50%;
+  padding: 15px 90px;
+  height: 100%;
+  background: #f5f6fa;
+  overflow-y: auto;
+}
+.register_section .register_right::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background: var(--blue);
+}
+.register_section .register_right::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.register_section .register_right::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.register_section .register_right::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+.register_section .register_right::-webkit-scrollbar-thumb:horizontal {
+  background: #888;
+  border-radius: 10px;
+}
+.register_section .register_right .rigster_input_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  max-width: 700px;
+}
+.register_section .register_right .rigster_input_box .register_image {
+  background: var(--white);
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+}
+.register_section .register_right .rigster_input_box .register_name {
+  width: 100%;
+}
+.register_section .register_right .rigster_input_box .register_name h3 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--mainfontcolur);
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+.register_section .register_right .rigster_input_box form {
+  width: 100%;
+}
+.register_section .register_right .rigster_input_box .register_input {
+  width: 100%;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div {
+  width: 100%;
+  padding-bottom: 12px;
+  position: relative;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--mainfontcolur);
+  display: block;
+  padding-bottom: 4px;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid rgba(197, 197, 197, 0.2392156863);
+  background: var(--white);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--mainfontcolur);
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  position: relative;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div textarea {
+  border: 1px solid rgba(197, 197, 197, 0.2392156863);
+  border-radius: 4px;
+  width: 100%;
+  height: 80px;
+  overflow-y: auto;
+  resize: none;
+  background: var(--white);
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  color: var(--mainfontcolur);
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .image_box {
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .image_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 5px;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .pass_div {
+  position: relative;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .pass_div button {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .submit_btn {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: var(--white);
+  border-radius: 4px;
+  background: var(--blue);
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 40px;
+  transition: all ease-in-out 0.3s;
+  width: 100%;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .submit_btn:hover {
+  background: var(--green);
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .text-danger {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--redbackground);
+  padding-top: 4px;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div.input_div_background input {
+  width: auto;
+  background: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .input_password {
+  position: relative;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .input_password input {
+  position: relative;
+}
+.register_section .register_right .rigster_input_box .register_input .input_div .input_password .eye_password {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.register_section .register_right .rigster_input_box .register_input .remember .left input {
+  border: 1px solid var(--border);
+  width: 18px;
+  height: 18px;
+}
+.register_section .register_right .rigster_input_box .register_input .remember .left label {
+  font-size: 1.3rem;
+  color: var(--mainfontcolur);
+  font-weight: 500;
+  padding-left: 6px;
+}
+.register_section .register_right .rigster_input_box .register_input .remember .right {
+  margin-left: auto;
+}
+.register_section .register_right .rigster_input_box .register_input .remember .right a {
+  font-size: 1.3rem;
+  color: var(--mainfontcolur);
+  font-weight: 500;
+  transition: all ease-in-out 0.3s;
+}
+.register_section .register_right .rigster_input_box .register_input .remember .right a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.register_section .register_right .rigster_input_box .register_input .login_btn {
+  padding-top: 20px;
+}
+.register_section .register_right .rigster_input_box .register_input .login_btn button {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--white);
+  border-radius: 4px;
+  background: var(--blue);
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 0;
+  transition: all ease-in-out 0.3s;
+}
+.register_section .register_right .rigster_input_box .register_input .login_btn button:hover {
+  background: var(--green);
+}
+.register_section .register_right .rigster_input_box .register_input .register_div {
+  text-align: center;
+  padding-top: 15px;
+}
+.register_section .register_right .rigster_input_box .register_input .register_div p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.register_section .register_right .rigster_input_box .register_input .register_div p a {
+  font-size: 1.4rem;
+  padding-left: 10px;
+  color: var(--blue);
+  transition: all ease-in-out 0.3s;
+}
+.register_section .register_right .rigster_input_box .register_input .register_div p a:hover {
+  text-decoration: underline;
+}
+.register_section .register_right .rigster_input_box .login_div {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0 50px 0;
+}
+.register_section .register_right .rigster_input_box .login_div p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.register_section .register_right .rigster_input_box .login_div p a {
+  font-size: 1.5rem;
+  padding-left: 10px;
+  color: var(--blue);
+  transition: all ease-in-out 0.3s;
+}
+.register_section .register_right .rigster_input_box .login_div p a:hover {
+  text-decoration: underline;
+}
+.register_section .register_right .rigster_input_box.login_div {
+  justify-content: center;
+}/*# sourceMappingURL=login.css.map */

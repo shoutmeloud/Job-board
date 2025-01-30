@@ -1,0 +1,102 @@
+.settins_tab  {
+
+    .nav  {
+        width: 100%;
+        max-width: initial;
+        margin-bottom: 0 !important;
+        border-bottom: 1px solid var(--border);
+
+        .nav-item  {
+            transition: all ease-in-out .3s;
+            
+            &:not(:last-child)  {
+                padding-right: 10px;
+            }
+
+            .nav-link  {
+                font-size: 1.5rem;
+                font-weight: 500;
+                position: relative;
+                background: none;
+                transition: all ease-in-out .3s;
+                padding: 9px 15.3px;
+                color: var(--mainfontcolur);
+                overflow: hidden;
+                border: none;
+                border-radius: 0px;
+
+                &::after  {
+                    content: "";
+                    width: 0%;
+                    height: 2px;
+                    top: 39px;
+                    right: 0;
+                    background: var(--blue);
+                    position: absolute;
+                    transition: all ease-in-out .3s;
+                }
+
+                &:hover::after  {
+                    width: 100%;
+                    left: 0;
+                }
+
+                &.active::after  {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .tab-content  {
+        padding-top: 24px;
+        width: 100%;
+
+        .input_box  {
+
+            .input_sub_box  {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child)  {
+                    padding-bottom: 10px;
+                }
+
+                label  {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    color: var(--mainfontcolur);
+                    width: 100px;
+                    margin-right: 26px;
+                }
+
+                input  {
+                    border: 1px solid var(--border);
+                    border-radius: 4px;
+                    width: 360px;
+                    height: 40px;
+                    background: none;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-size: 1.4rem;
+                    color: var(--mainfontcolur);
+                    position: relative;
+                }
+
+                button  {
+                    margin-top: 20px;
+                    border: none;
+                    outline: none;
+                    background: var(--blue);
+                    color: #fff;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    padding: 8px 18px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
