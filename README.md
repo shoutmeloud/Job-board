@@ -1,5 +1,5 @@
 # Job-board
-Job Board with front end and backend built by VueJs and Laravel10
+Job Board with front end and backend built by VueJs and Laravel 10
 
 This project is about the job board creation for several enlisted clients of Reddensoft. On a broader aspect, the job board will work as searching for efficient employees of Reddensoft who are eligible to work on the client’s requirements.
 
