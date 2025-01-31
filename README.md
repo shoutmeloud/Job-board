@@ -1,12 +1,13 @@
 # Job-board
-Job Board with front end and backend built by VueJs and Laravel 10
+> [!NOTE]
+> Job Board with front end and backend built by VueJs and Laravel 10
 
-This project is about the job board creation for several enlisted clients of Reddensoft. On a broader aspect, the job board will work as searching for efficient employees of Reddensoft who are eligible to work on the client’s requirements.
+This project is about creating a job board for several Reddensoft enlisted clients. On a broader aspect, the job board will work as searching for efficient employees of Reddensoft who are eligible to work on the client’s requirements.
 
 Three types of user scenarios will be created for this project:
-- **Super Admin,**
+- **Super Admin**
 
-- **Client,**
+- **Client**
 
 - **Employee**
 
@@ -15,7 +16,7 @@ Three types of user scenarios will be created for this project:
 
 - Client can log into the portal with the client's user account
 
-- Client can post a job/ requirement
+- Client can post their requirement
 
 - Client can seek eligible employees who can do the project work
 
@@ -29,7 +30,7 @@ Three types of user scenarios will be created for this project:
 
 - Referral points will be collected if the referred person gets registered into the system
   
-- Employees can log into the system and can update their profile as well as upload the latest CV.
+- Employees can log into the system, update their profile, and upload the latest CV.
   
 - Employees can view their project list.
 
